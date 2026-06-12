@@ -170,8 +170,8 @@ CINDER_ASCII
   local inner=$((width - 2))
   printf "${MUTED}${TL}$(printf '%0.s═' $(seq 1 "$inner"))${TR}${RESET}\n"
   printf "${MUTED}${V}${RESET}  ${BRAND}🔥${RESET}  ${BOLD}Cinder${RESET} is a beautiful movie & TV streaming app      ${MUTED}${V}${RESET}\n"
-  printf "${MUTED}${V}${RESET}     powered by TMDB. This script will get                 ${MUTED}${V}${RESET}\n"
-  printf "${MUTED}${V}${RESET}     everything set up in just a few steps.                ${MUTED}${V}${RESET}\n"
+  printf "${MUTED}${V}${RESET}     powered by TMDB. This script will get               ${MUTED}${V}${RESET}\n"
+  printf "${MUTED}${V}${RESET}     everything set up in just a few steps.              ${MUTED}${V}${RESET}\n"
   printf "${MUTED}${BL}$(printf '%0.s═' $(seq 1 "$inner"))${BR}${RESET}\n"
   printf "\n"
   printf "  ${MUTED}Press${RESET} ${BOLD}Enter${RESET} ${MUTED}to begin the setup...${RESET}"

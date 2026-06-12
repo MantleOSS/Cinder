@@ -45,18 +45,17 @@ set "TOTAL_STEPS=5"
 
 cls
 echo.
-echo   %AMBER%%BOLD%╔══════════════════════════════════════════════════════════════╗%RST%
-echo   %AMBER%%BOLD%║%RST%                                                              %AMBER%%BOLD%║%RST%
-echo   %AMBER%%BOLD%║%RST%     %AMBER_BRIGHT%%BOLD%  ██████╗██╗███╗   ██╗██████╗%RST%                               %AMBER%%BOLD%║%RST%
-echo   %AMBER%%BOLD%║%RST%     %AMBER_BRIGHT%%BOLD% ██╔════╝██║████╗  ██║██╔══██╗%RST%                              %AMBER%%BOLD%║%RST%
-echo   %AMBER%%BOLD%║%RST%     %AMBER_BRIGHT%%BOLD% ██║     ██║██╔██╗ ██║██║  ██║%RST%    %GOLD%%BOLD%U P D A T E%RST%                      %AMBER%%BOLD%║%RST%
-echo   %AMBER%%BOLD%║%RST%     %AMBER_BRIGHT%%BOLD% ██║     ██║██║╚██╗██║██║  ██║%RST%                              %AMBER%%BOLD%║%RST%
-echo   %AMBER%%BOLD%║%RST%     %AMBER_BRIGHT%%BOLD% ╚██████╗██║██║ ╚████║██████╔╝%RST%                              %AMBER%%BOLD%║%RST%
-echo   %AMBER%%BOLD%║%RST%     %AMBER_BRIGHT%%BOLD%  ╚═════╝╚═╝╚═╝  ╚═══╝╚═════╝%RST%                              %AMBER%%BOLD%║%RST%
-echo   %AMBER%%BOLD%║%RST%                                                              %AMBER%%BOLD%║%RST%
-echo   %AMBER%%BOLD%║%RST%  %DIM%Movie Streaming — Update Utility%RST%                              %AMBER%%BOLD%║%RST%
-echo   %AMBER%%BOLD%║%RST%                                                              %AMBER%%BOLD%║%RST%
-echo   %AMBER%%BOLD%╚══════════════════════════════════════════════════════════════╝%RST%
+echo   %AMBER%%BOLD% /$$$$$$  /$$$$$$ /$$   /$$ /$$$$$$$  /$$$$$$$$ /$$$$$$$ %RST%
+echo   %AMBER%%BOLD%/$$__  $$|_  $$_/| $$$ | $$| $$__  $$| $$_____/| $$__  $$%RST%
+echo   %AMBER%%BOLD%| $$  \__/  | $$  | $$$$| $$| $$  \ $$| $$      | $$  \ $$%RST%
+echo   %AMBER%%BOLD%| $$        | $$  | $$ $$ $$| $$  | $$| $$$$$   | $$$$$$$/%RST%    %GOLD%%BOLD%U P D A T E%RST%
+echo   %AMBER%%BOLD%| $$        | $$  | $$  $$$$| $$  | $$| $$__/   | $$__  $$%RST%
+echo   %AMBER%%BOLD%| $$    $$  | $$  | $$\  $$$| $$  | $$| $$      | $$  \ $$%RST%
+echo   %AMBER%%BOLD%|  $$$$$$/ /$$$$$$| $$ \  $$| $$$$$$$/| $$$$$$$$| $$  | $$%RST%
+echo   %AMBER%%BOLD% \______/ |______/|__/  \__/|_______/ |________/|__/  |__/%RST%
+echo   %AMBER%%BOLD%                                                           %RST%
+echo.
+echo   %DIM%Movie Streaming — Update Utility%RST%
 echo.
 
 :: ─── Step 1: Check Git & Pull ──────────────────────────────────────────────

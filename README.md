@@ -36,7 +36,7 @@ Get up and running in three easy steps:
 ### 1️⃣ Clone or Download
 
 ```bash
-git clone https://github.com/mantle/cinder.git
+git clone https://github.com/MantleOSS/Cinder.git
 cd cinder
 ```
 

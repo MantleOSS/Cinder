@@ -20,7 +20,7 @@
 ## ✨ Features
 
 - 🎬 **Browse Movies & TV Shows** — Discover trending, top-rated, and upcoming content
-- 📺 **Stream via Vidking** — One-click streaming with a powerful embedded player
+- 📺 **Stream for free** — One-click streaming with a powerful embedded player
 - 📋 **Watchlist** — Save movies and shows to watch later
 - 📊 **Watch Progress Tracking** — Pick up right where you left off
 - 🌑 **Beautiful Dark Cinematic UI** — Ember & amber themed, designed for the living room

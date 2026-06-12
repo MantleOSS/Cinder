@@ -1,0 +1,263 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/* EXBED display font for branding */
+@font-face {
+  font-family: "Exbed";
+  src: url("/fonts/exbed.woff2") format("woff2"),
+       url("/fonts/exbed.woff") format("woff"),
+       url("/fonts/exbed.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-outfit);
+  --font-exbed: "Exbed", sans-serif;
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --color-ember: var(--ember);
+  --color-ember-foreground: var(--ember-foreground);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+:root {
+  --radius: 0.75rem;
+  --background: oklch(0.11 0.005 260);
+  --foreground: oklch(0.96 0.005 260);
+  --card: oklch(0.14 0.005 260);
+  --card-foreground: oklch(0.96 0.005 260);
+  --popover: oklch(0.14 0.005 260);
+  --popover-foreground: oklch(0.96 0.005 260);
+  --primary: oklch(0.65 0.18 40);
+  --primary-foreground: oklch(0.98 0.005 260);
+  --secondary: oklch(0.20 0.005 260);
+  --secondary-foreground: oklch(0.9 0.005 260);
+  --muted: oklch(0.20 0.005 260);
+  --muted-foreground: oklch(0.62 0.01 260);
+  --accent: oklch(0.65 0.18 40);
+  --accent-foreground: oklch(0.98 0.005 260);
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: oklch(1 0 0 / 8%);
+  --input: oklch(1 0 0 / 12%);
+  --ring: oklch(0.65 0.18 40);
+  --ember: oklch(0.65 0.18 40);
+  --ember-foreground: oklch(0.98 0.005 260);
+  --chart-1: oklch(0.65 0.18 40);
+  --chart-2: oklch(0.65 0.15 25);
+  --chart-3: oklch(0.6 0.1 50);
+  --chart-4: oklch(0.55 0.16 20);
+  --chart-5: oklch(0.7 0.12 55);
+  --sidebar: oklch(0.13 0.005 260);
+  --sidebar-foreground: oklch(0.96 0.005 260);
+  --sidebar-primary: oklch(0.65 0.18 40);
+  --sidebar-primary-foreground: oklch(0.98 0.005 260);
+  --sidebar-accent: oklch(0.20 0.005 260);
+  --sidebar-accent-foreground: oklch(0.9 0.005 260);
+  --sidebar-border: oklch(1 0 0 / 8%);
+  --sidebar-ring: oklch(0.65 0.18 40);
+}
+
+.dark {
+  --background: oklch(0.11 0.005 260);
+  --foreground: oklch(0.96 0.005 260);
+  --card: oklch(0.14 0.005 260);
+  --card-foreground: oklch(0.96 0.005 260);
+  --popover: oklch(0.14 0.005 260);
+  --popover-foreground: oklch(0.96 0.005 260);
+  --primary: oklch(0.65 0.18 40);
+  --primary-foreground: oklch(0.98 0.005 260);
+  --secondary: oklch(0.20 0.005 260);
+  --secondary-foreground: oklch(0.9 0.005 260);
+  --muted: oklch(0.20 0.005 260);
+  --muted-foreground: oklch(0.62 0.01 260);
+  --accent: oklch(0.65 0.18 40);
+  --accent-foreground: oklch(0.98 0.005 260);
+  --destructive: oklch(0.704 0.191 22.216);
+  --border: oklch(1 0 0 / 8%);
+  --input: oklch(1 0 0 / 12%);
+  --ring: oklch(0.65 0.18 40);
+  --ember: oklch(0.65 0.18 40);
+  --ember-foreground: oklch(0.98 0.005 260);
+  --chart-1: oklch(0.65 0.18 40);
+  --chart-2: oklch(0.65 0.15 25);
+  --chart-3: oklch(0.6 0.1 50);
+  --chart-4: oklch(0.55 0.16 20);
+  --chart-5: oklch(0.7 0.12 55);
+  --sidebar: oklch(0.13 0.005 260);
+  --sidebar-foreground: oklch(0.96 0.005 260);
+  --sidebar-primary: oklch(0.65 0.18 40);
+  --sidebar-primary-foreground: oklch(0.98 0.005 260);
+  --sidebar-accent: oklch(0.20 0.005 260);
+  --sidebar-accent-foreground: oklch(0.9 0.005 260);
+  --sidebar-border: oklch(1 0 0 / 8%);
+  --sidebar-ring: oklch(0.65 0.18 40);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: oklch(0.3 0.005 260);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: oklch(0.5 0.08 40);
+}
+
+/* Hide horizontal scrollbar for content rows */
+.hide-scrollbar::-webkit-scrollbar {
+  height: 0;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@layer utilities {
+  /* Ember shadow: inner border + subtle tinted shadow (no outer glow) */
+  .ember-shadow {
+    box-shadow: inset 0 0 0 1px oklch(0.65 0.18 40 / 25%),
+      0 2px 8px oklch(0.65 0.18 40 / 12%);
+  }
+
+  /* Glass panel: backdrop-blur + inner border + highlight (Apple Liquid Glass approximation) */
+  .glass {
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+    background: oklch(0.14 0.005 260 / 60%);
+    box-shadow: inset 0 0 0 1px oklch(1 0 0 / 10%),
+      inset 0 1px 0 oklch(1 0 0 / 6%),
+      0 4px 16px oklch(0 0 0 / 20%);
+  }
+
+  /* Backdrop blur for overlays - using Tailwind backdrop-blur-xl instead */
+
+  /* Rating circle */
+  .rating-circle {
+    background: conic-gradient(
+      oklch(0.65 0.18 40) calc(var(--rating) * 1%),
+      oklch(0.25 0.005 260) calc(var(--rating) * 1%)
+    );
+  }
+
+  /* Shimmer loading effect */
+  .shimmer {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .shimmer::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      oklch(1 0 0 / 5%),
+      transparent
+    );
+    animation: shimmer 1.5s infinite;
+  }
+
+  /* Stagger animation helper */
+  .stagger-children > * {
+    opacity: 0;
+    animation: fadeInUp 0.5s ease forwards;
+  }
+
+  /* Safe area for mobile bottom nav */
+  .safe-area-bottom {
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+
+  /* Text glow for headings */
+  .text-glow {
+    text-shadow: 0 0 20px oklch(0.65 0.18 40 / 30%);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Reduced motion: disable all animations for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

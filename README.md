@@ -37,7 +37,7 @@ Get up and running in three easy steps:
 
 ```bash
 git clone https://github.com/MantleOSS/Cinder.git
-cd cinder
+cd Cinder
 ```
 
 ### 2️⃣ Run the Setup Script
